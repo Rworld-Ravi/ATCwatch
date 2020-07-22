@@ -12,6 +12,7 @@
 #define WAKEUP_TOUCH 7
 #define WAKEUP_ACCL 8
 #define WAKEUP_ACCL_INT 9
+#define WAKEUP_BLEHTTP 10
 
 void init_sleep();
 void set_sleep(bool state);
@@ -26,6 +27,4 @@ void check_sleep_times();
 bool get_timed_int();
 long get_timed_int_time();
 void set_timed_int_time(long times);
-void set_i2cReading(bool state);
-bool get_i2cReading();
 void initRTC2();
