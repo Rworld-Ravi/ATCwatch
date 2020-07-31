@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2020 Aaron Christophel
+ *
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
 
 #pragma once
 #include "Arduino.h"
@@ -107,6 +112,22 @@ class SettingsColorScreen : public Screen
         set_font_color(lv_ddlist_get_selected(ddlist_font));
         set_gray_screen_style();
       }
+    }
+
+    virtual void up()
+    {
+    }
+
+    virtual void down()
+    {
+    }
+
+    virtual void right()
+    {
+    }
+
+    virtual void left()
+    {
     }
 
   private:

@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2020 Aaron Christophel
+ *
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
 
 #pragma once
 #include "Arduino.h"
@@ -13,6 +18,7 @@
 #include "push.h"
 #include "heartrate.h"
 #include "fonts.h"
+#include "sleep.h"
 #include <lvgl.h>
 
 
@@ -137,6 +143,11 @@ class HomeScreen : public Screen
 
     virtual void right()
     {
+    }
+
+    virtual void button_push(int length)
+    {
+      sleep_down();
     }
 
   private:

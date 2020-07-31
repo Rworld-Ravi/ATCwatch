@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2020 Aaron Christophel
+ *
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
 
 #pragma once
 #include "Arduino.h"
@@ -156,6 +161,22 @@ class SettingsTimeScreen : public Screen
         set_last_menu();
         set_motor_ms(35);
       }
+    }
+
+    virtual void up()
+    {
+    }
+
+    virtual void down()
+    {
+    }
+
+    virtual void right()
+    {
+    }
+
+    virtual void left()
+    {
     }
 
   private:

@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2020 Aaron Christophel
+ *
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
 
 #pragma once
 #include "Arduino.h"
@@ -65,6 +70,22 @@ class SettingsBrightnessScreen : public Screen
         lv_label_set_text_fmt(slider_label, "%u", slider_backlight);
         set_backlight(slider_backlight);
       }
+    }
+
+    virtual void up()
+    {
+    }
+
+    virtual void down()
+    {
+    }
+
+    virtual void right()
+    {
+    }
+
+    virtual void left()
+    {
     }
 
   private:
